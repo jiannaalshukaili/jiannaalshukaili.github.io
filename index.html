@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#073f7f" />
+  <meta name="description" content="Digital business card for Omani Unified Bureau for the Orange Card S.A.O.C." />
+  <title>Jianna Al Shukaili | OUBOC</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+
+  <main class="page-shell">
+    <article class="digital-card" aria-label="بطاقة أعمال رقمية">
+      <div class="card-glow" aria-hidden="true"></div>
+      <div class="line-art line-art--top" aria-hidden="true"></div>
+      <div class="line-art line-art--bottom" aria-hidden="true"></div>
+
+      <header class="hero reveal" style="--delay: 0ms">
+        <img class="brand-logo" src="assets/ouboc-logo.png" alt="شعار المكتب العماني الموحد للبطاقة البرتقالية" />
+
+        <div class="profile-photo-shell" id="profilePhotoShell">
+          <img
+            class="profile-photo"
+            id="profilePhoto"
+            src="assets/person-photo.jpg"
+            alt="الصورة الشخصية لهيثم السعدي"
+            width="900"
+            height="900"
+            decoding="async"
+          />
+          <span class="profile-photo-fallback" aria-hidden="true">هـ س</span>
+        </div>
+
+        <div class="identity">
+          <p class="eyebrow"></p>
+          <h1>    جيانا بنت جمعة  الشكيلي </h1>
+          <p class="name-en" dir="ltr">Ms.Jianna Juam Al Shukaili</p>
+          <div class="role-wrap">
+            <span class="role"> محاسب عام  </span>
+            <span class="role-separator" aria-hidden="true"></span>
+            <span class="role" dir="ltr">General Accountant</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="quick-actions reveal" style="--delay: 100ms" aria-label="إجراءات سريعة">
+        <a class="quick-action" href="tel:+96894422296" aria-label="اتصال">
+          <span class="icon-bubble" data-icon="phone"></span>
+          <span>اتصال</span>
+        </a>
+        <a class="quick-action" href="mailto:hsaadi@orangecard.com.om" aria-label="بريد إلكتروني">
+          <span class="icon-bubble" data-icon="mail"></span>
+          <span>بريد</span>
+        </a>
+        <a class="quick-action" href="https://www.orangecard.com.om" target="_blank" rel="noopener" aria-label="الموقع الإلكتروني">
+          <span class="icon-bubble" data-icon="globe"></span>
+          <span>الموقع</span>
+        </a>
+      </section>
+
+      <section class="contact-list" id="contactDetails" aria-label="بيانات التواصل">
+        <a class="contact-row contact-row--whatsapp reveal" style="--delay: 180ms"href="https://api.whatsapp.com/send?phone=96894422296" target="_blank" rel="noopener" aria-label="محادثة هيثم عبر واتساب">
+          <span class="row-icon row-icon--whatsapp" data-icon="whatsapp"></span>
+          <span class="row-copy">
+            <small>WhatsApp</small>
+            <strong dir="ltr">+968 94422296</strong>
+          </span>
+          <span class="chevron" data-icon="arrow"></span>
+        </a>
+
+        <a class="contact-row reveal" style="--delay: 240ms" href="mailto:hsaadi@orangecard.com.om">
+          <span class="row-icon" data-icon="mail"></span>
+          <span class="row-copy">
+            <small>Email</small>
+            <strong dir="ltr">hsaadi@orangecard.com.om</strong>
+          </span>
+          <span class="chevron" data-icon="arrow"></span>
+        </a>
+
+        <a class="contact-row reveal" style="--delay: 300ms" href="https://www.orangecard.com.om" target="_blank" rel="noopener">
+          <span class="row-icon" data-icon="globe"></span>
+          <span class="row-copy">
+            <small>Website</small>
+            <strong dir="ltr">www.orangecard.com.om</strong>
+          </span>
+          <span class="chevron" data-icon="arrow"></span>
+        </a>
+
+        <a class="contact-row reveal" style="--delay: 360ms" href="https://maps.app.goo.gl/fHU3oUskg9M4kdSW9?g_st=ic" target="_blank" rel="noopener">
+          <span class="row-icon" data-icon="pin"></span>
+          <span class="row-copy">
+            <small>Office</small>
+            <strong>Location</strong>
+          </span>
+          <span class="chevron" data-icon="arrow"></span>
+        </a>
+      </section>
+
+      <section class="company-note reveal" style="--delay: 420ms">
+        <span class="note-mark" aria-hidden="true"></span>
+        <p>حماية موحّدة، شراكة موثوقة، تغطية أوسع، وتميّز في الخدمة.</p>
+      </section>
+
+      <button class="save-contact reveal" aria-describedby="saveHelp" style="--delay: 500ms" id="saveContact" type="button">
+        <span class="save-icon" data-icon="contact"></span>
+        <span class="save-copy">
+          <strong>حفظ جهة الاتصال</strong>
+          <small id="saveHelp">Add to Address Book</small>
+        </span>
+        <span class="save-arrow" data-icon="download"></span>
+      </button>
+
+      <footer class="footer reveal" style="--delay: 560ms">
+        <span>OUBOC</span>
+        <span class="footer-dot"></span>
+        <span>Muscat, Sultanate of Oman</span>
+      </footer>
+    </article>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">تم تجهيز جهة الاتصال</div>
+  <script src="script.js"></script>
+</body>
+</html>

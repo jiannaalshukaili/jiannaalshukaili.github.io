@@ -1,0 +1,6 @@
+Android notes
+=============
+
+1. Opening the normal URL inside Chrome or Samsung Internet will always show the browser address/navigation bars. A web page cannot forcibly hide those browser controls.
+2. This build includes a PWA manifest and service worker. After publishing over HTTPS, choose "Add to Home screen" or "Install app", then launch it from the new home-screen icon. It will open in standalone mode without the normal browser bars.
+3. Android text auto-scaling is normalized with text-size-adjust: 100%, and extra small-screen rules prevent horizontal overflow and unwanted text enlargement.
