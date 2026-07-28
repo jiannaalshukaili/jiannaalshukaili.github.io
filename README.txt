@@ -7,7 +7,6 @@ Files:
 - script.js
 - assets/ouboc-logo.png
 - assets/favicon.svg
-- assets/person-photo.jpg (replace this file with the real portrait)
 
 How to use:
 1. Open index.html in any modern browser.
@@ -25,9 +24,3 @@ Fonts:
 - Cairo for Arabic
 - Montserrat for English
 Both load from Google Fonts with system fallbacks.
-
-
-Person photo:
-- Replace assets/person-photo.jpg with the real portrait while keeping the same filename.
-- Recommended: square image, 1000 x 1000 px or larger, JPG, under 600 KB.
-- Keep the face near the upper-center of the image. The design crops it automatically into a circle.

@@ -18,29 +18,14 @@ window.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(() => document.body.classList.add('loaded'));
 });
 
-const profilePhoto = document.getElementById('profilePhoto');
-const profilePhotoShell = document.getElementById('profilePhotoShell');
-
-if (profilePhoto && profilePhotoShell) {
-  const showFallback = () => profilePhotoShell.classList.add('photo-missing');
-  const showPhoto = () => profilePhotoShell.classList.remove('photo-missing');
-
-  profilePhoto.addEventListener('error', showFallback);
-  profilePhoto.addEventListener('load', showPhoto);
-
-  if (profilePhoto.complete && profilePhoto.naturalWidth === 0) {
-    showFallback();
-  }
-}
-
 const contact = {
-  firstName: 'Haitham',
-  middleName: 'Hilal',
-  lastName: 'Al Sadi',
+  firstName: 'Jianna',
+  middleName: 'Juam',
+  lastName: 'Al Shukaili',
   organization: 'Omani Unified Bureau for the Orange Card S.A.O.C.',
-  title: 'Finance Manager',
-  phone: '+96894422296',
-  email: 'hsaadi@orangecard.com.om',
+  title: 'General Accountant',
+  phone: '+96824788747',
+  email: 'jshukaili@orangecard.com.om',
   website: 'https://www.orangecard.com.om',
   address: 'P.O. Box 164, P.C. 122, Ruwi, Muscat, Sultanate of Oman'
 };
@@ -65,7 +50,7 @@ function downloadVCard() {
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = 'Haitham-Al-Sadi.vcf';
+  link.download = 'Jianna Al Shukaili.vcf';
   document.body.appendChild(link);
   link.click();
   link.remove();
@@ -77,13 +62,3 @@ function downloadVCard() {
 }
 
 document.getElementById('saveContact').addEventListener('click', downloadVCard);
-
-
-// Enables app-like standalone launch after the site is added to the Android home screen.
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./service-worker.js').catch(() => {
-      // The page still works normally when service workers are unavailable.
-    });
-  });
-}
